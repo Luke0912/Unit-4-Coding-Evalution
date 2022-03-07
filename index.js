@@ -17,7 +17,7 @@ app.get("/authors", checkPermission("authors"), (req, res) => {
 });
 
 function logger(req, res, next) {
-  console.log(`Requested Path ${req.path}`);
+  console.log(`Requested Path  ${req.path}`);
   next();
 }
 
